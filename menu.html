@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee Heaven Menu</title>
+  <link rel="icon" type="image/png" href="logo.png">
+  <style>
+    body {
+      background-color: #ffe8bd;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .menu-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 1rem;
+      flex-grow: 1;
+    }
+
+    .menu-item {
+      flex: 0 0 calc(33.33% - 2rem);
+      margin: 1rem;
+      padding: 1rem;
+      background-color: #f1f1f183;
+      color: #333;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .menu-item h3 {
+      margin-top: 0;
+    }
+
+    .menu-item p {
+      margin-bottom: 0;
+    }
+    
+    .menu-item img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 1rem;
+    }
+    
+    .menu-item .add-to-cart {
+      background-color: rgb(201, 151, 0);
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .menu-item .add-to-cart:hover {
+      background-color: #af8103;
+    }
+    
+    footer {
+      background-color:#946c00;
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+      flex-shrink: 0;
+    }
+    .order-details {
+      background-color: #b38300; /* Yellow */
+      padding: 2rem 0;
+      text-align: center;
+    }
+
+    .order-details h2 {
+      margin-top: 0;
+    }
+
+    .order-details p {
+      margin-bottom: 0;
+    }
+      @media screen and (max-width: 768px) {
+    .menu-item {
+      flex-basis: 100%;
+    }
+    }
+  </style>
+</head>
+
+<body>
+      
+  <header>
+    <div class="header-content">
+      <div class="top-header1">
+        <h3 class="header-text">COFFEE HEAVEN MENU</h3>
+      </div>
+        
+      <style> .top-header1 {
+        background-image: url('coffee-background.png');
+        background-size: cover;
+        background-position: center;
+        color: white;
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 2rem; /* Increase font size for header */
+        padding: 2rem 0;
+      }
+      </style>
+  
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="locations.html">Locations</a>
+    <a href="about.html">About</a>
+  </nav>
+  
+  <style>
+     nav {
+    background-color: #8f6900;
+    padding: 1rem;
+    text-align: center;
+    margin-bottom: 1rem; /* Add margin to separate from content */
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem; /* Adjust spacing between nav links */
+    font-size: 1.2rem; /* Increase font size for nav links */
+  }
+  
+  nav a:hover {
+    background-color: #6b5206; /* Lighter Yellow */
+  }
+  
+  nav a:hover, nav a.active {
+    color: #ffffff; /* Update the color to match the gradient */
+  }
+
+  </style>
+</header>
+  <div class="menu-container">
+    <div class="menu-item">
+      <img src="brewedcoffee.png" alt="BREWED COFFEE">
+      <h3>BREWED COFFEE</h3>
+      <span class="price">$5.00</span>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="menu-item">
+      <img src="creamylatte.png" alt="CREAMY LATTE">
+      <h3>CREAMY LATTE</h3>
+      <span class="price">$7.50</span>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="menu-item">
+      <img src="blackforest.png" alt="BLACKFOREST">
+      <h3>BLACKFOREST</h3>
+      <span class="price">$8.50</span>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="menu-item">
+      <img src="coffeefrappe.png" alt="COFFEE FRAPPE">
+      <h3>COFFEE FRAPPE</h3>
+      <span class="price">$8.99</span>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="menu-item">
+      <img src="darkchocolatte.png" alt="ICED DARK CHOCO">
+      <h3>ICED DARK CHOCO</h3>
+      <span class="price">$7.99</span>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="menu-item">
+      <img src="dirtybobba.png" alt="DIRTY BOBBA">
+      <h3>DIRTY BOBBA</h3>
+      <span class="price">$6.99</span>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="menu-item">
+      <img src="icedamericano.png" alt="ICED AMERICANO">
+      <h3>ICED AMERICANO</h3>
+      <span class="price">$5.99</span>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="menu-item">
+      <img src="icedcaramel.png" alt="CARAMEL MACCHIATO">
+      <h3>CARAMEL MACCHIATO</h3>
+      <span class="price">$8.99</span>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="menu-item">
+      <img src="icedcoffeecaramel.png" alt="ICED COFFEE CARAMEL">
+      <h3>ICED COFFEE CARAMEL</h3>
+      <span class="price">$7.99</span>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="menu-item">
+      <img src="icedcoffeemint.png" alt="ICED COFFEE MINT">
+      <h3>ICED COFFEE MINT</h3>
+      <span class="price">$8.99</span>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="menu-item">
+      <img src="icedmatcha.png" alt="ICED MATCHA">
+      <h3>ICED MATCHA</h3>
+      <span class="price">$8.99</span>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="menu-item">
+      <img src="icedmocha.png" alt="ICED MOCHA">
+      <h3>ICED MOCHA</h3>
+      <span class="price">$7.99</span>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="menu-item">
+      <img src="mildicedamericano.png" alt="ICED AMERICANO (Mild)">
+      <h3>ICED AMERICANO (Mild)</h3>
+      <span class="price">$5.00</span>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="menu-item">
+      <img src="icedvanilla.png" alt="ICED VANILLA">
+      <h3>ICED VANILLA</h3>
+      <span class="price">$6.99</span>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+  </div>
+</header>
+
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee Heaven</title>
+
+  <footer>
+    <p>© 2024 Coffee Heaven. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>
